@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get '/cafe', to: 'cafe#index'
+  root to: 'cafe#index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
