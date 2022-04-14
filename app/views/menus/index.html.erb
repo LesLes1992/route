@@ -1,0 +1,19 @@
+<h1>Menus</h1>
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @menu.each do |item| %>
+        <tr>
+          <td><%= item[:name] %></td>
+          <td>$<%= "%.2f" % item[:price] %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+

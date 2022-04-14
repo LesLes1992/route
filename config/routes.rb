@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'cafe#index'
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  get 'menus', to: 'menus#index'
+  root 'cafe#index'
+  post 'menus', to: 'menus#create'
 end
